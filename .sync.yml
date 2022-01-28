@@ -7,23 +7,3 @@
 # for the default values.
 ---
 mock_with: ":rspec"
-spec/spec_helper.rb:
-  hiera_config: 'spec/fixtures/hiera/hiera.yaml'
-Gemfile:
-  optional:
-    ":test":
-      - gem: puppet-lint-param-docs
-# Clean up files we don't want
-.vscode:
-  delete: true
-.gitlab-ci.yml:
-  delete: true
-appveyor.yml:
-  delete: true
-.travis.yml:
-  delete: true
-.pdkignore:
-  delete: true
-.yardopts:
-  delete: true
-
