@@ -20,7 +20,7 @@ antivirus agent.
 ## Description
 
 The modules installs and manages or removes the Falcon Sensor anti-virus
-agent by CrowdStrike. Proxy settings and tags can be confiugred additionaly. 
+agent by CrowdStrike. Proxy settings and tags can be confiugred additionaly.
 
 ## Setup
 
@@ -72,3 +72,6 @@ If proxy has been used and later disabled, the host and port configuration is
 not removed entirely, only disabled. This does not affect the functionality in
 any way.
 
+## Testing
+Facter tests are a pain.  You need to do the steps in before to reset facter between tests.
+https://github.com/voxpupuli/puppet-network/blob/master/spec/unit/facter/network_nexthop_ip_spec.rb for an example
